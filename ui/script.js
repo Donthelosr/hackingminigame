@@ -39,7 +39,7 @@ let
 const init = () =>
 {
     loadingCount = 0;
-    timeRemaining = 15.0;
+    timeRemaining = 30.0;
     curField = 0;
     corrCombination = -1;
 
@@ -57,7 +57,7 @@ const init = () =>
         bgLoading.classList.remove('hidden');
         startLoadingTimer();
       }, 
-      2000
+      0
     );
 }
 bgTablet.classList.add('hidden');
@@ -102,11 +102,11 @@ const startLoadingTimer = () => // Displays the loading texts with a repeating t
           { 
             loadTablet();
           }, 
-          2000
+          1000
         );
       }
     },
-    1500
+    1000
   );
 };
 

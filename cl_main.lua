@@ -24,3 +24,7 @@ RegisterNUICallback('endTask', function(data)
 
 end)
 
+RegisterCommand('hminigametest',function(source,args)
+
+    exports['hackingminigame']:Open()
+end)
